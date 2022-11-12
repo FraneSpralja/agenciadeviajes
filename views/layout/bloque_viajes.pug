@@ -1,0 +1,16 @@
+div(class="row proximos-viajes")
+    each viaje in viajes
+        div(class="col-md-6 col-lg-4 mb-4")
+            div(class="card")
+                img(class="card-img-top" src=`img/destinos_${viaje.imagen.toLowerCase()}.jpg`)
+                div(class="card-body")
+                    h2 #{viaje.destino.toLowerCase()}
+                    p 
+                        i(class="fa-regular fa-calendar mr-2")
+                        | #{viaje.fecha_ida} - #{viaje.fecha_vuelta}
+                    p 
+                        i(class="fa-solid fa-users mr-2")
+                        |#{viaje.cantidad} Disponibles
+                    p #{viaje.comentario.substring(0, 110)}...
+
+                    a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block") Más Información
