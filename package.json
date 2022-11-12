@@ -4,7 +4,8 @@
   "description": "Primer Proyecto con NodeJs",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node index.js"
   },
   "type": "module",
   "author": "Frane Spralja",
