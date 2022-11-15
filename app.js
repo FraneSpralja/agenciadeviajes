@@ -35,5 +35,5 @@ app.use(express.static('public'));
 app.use('/', router);
 
 app.listen(port, () => {
-    // console.log(`El Servidor está funcionando en el puerto ${port}`)
+    console.log(`El Servidor está funcionando en el puerto ${port}`)
 })
